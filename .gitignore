@@ -1,0 +1,16 @@
+# 本地密钥，绝不提交
+*_key.local.txt
+*.local.*
+.env
+.env.*
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时产物
+*.log
+*.tmp
