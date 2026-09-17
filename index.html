@@ -463,7 +463,7 @@ details.cfg[open] summary{margin-bottom:4px}
     </ul>
   </section>
 
-  <!-- ===== 诊断（给阿法排错用，平时不用打开） ===== -->
+  <!-- ===== 诊断（排错用，平时不用打开） ===== -->
   <section class="card">
     <h2>
       <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 21h20L12 2z"/><path d="M12 9v5"/><path d="M12 17.5v.01"/></svg>
@@ -481,7 +481,7 @@ details.cfg[open] summary{margin-bottom:4px}
       </div>
       <div class="diag-stats" id="diagStat"></div>
       <pre id="diagLog"></pre>
-      <p class="diag-hint">什么时候会用到：如果哪一句读不出来，先点「立即测试小米语音」，再把「复制日志」的结果发给阿法，里面会有真实的错误码和耗时。加 <b>?debug</b> 打开页面的话，这个面板会自动展开。</p>
+      <p class="diag-hint">什么时候会用到：如果哪一句读不出来，先点「立即测试小米语音」，再点「复制日志」，里面会有真实的错误码和耗时，方便排查问题。加 <b>?debug</b> 打开页面的话，这个面板会自动展开。</p>
     </details>
   </section>
 
@@ -1532,7 +1532,7 @@ details.cfg[open] summary{margin-bottom:4px}
       try{
         if(navigator.clipboard && navigator.clipboard.writeText){
           await navigator.clipboard.writeText(txt);
-          toast('诊断信息已复制，粘给阿法就行');
+          toast('诊断信息已复制');
           return;
         }
         throw new Error('no clipboard');

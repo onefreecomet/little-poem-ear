@@ -4,6 +4,8 @@
 
 整个程序就是一个 `index.html`，没有构建步骤，没有任何依赖，双击就能打开。
 
+**在线直接打开（手机上也能用）：<https://onefreecomet.github.io/little-poem-ear/>**
+
 ![主界面](docs/screenshot-main.png)
 
 ## 缘起
@@ -31,7 +33,9 @@
 
 ### 放到手机上
 
-把这个文件丢到任意静态托管上，手机上打开链接，浏览器菜单里选「添加到主屏幕」，下次就像 App 一样点开。用 GitHub Pages 的话，仓库设置里把 Pages 指向根目录即可。
+直接打开上面的在线链接，在浏览器菜单里选「添加到主屏幕」，下次就像 App 一样点开。
+
+想自己部署也简单：把 `index.html` 丢到任意静态托管上就行（GitHub Pages、Netlify、Vercel 都可以），不需要任何构建步骤。
 
 ### 本地起个服务
 
